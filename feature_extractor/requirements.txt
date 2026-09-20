@@ -1,0 +1,6 @@
+pydantic>=2.7
+pymongo>=4.6
+boto3>=1.34
+pymilvus>=2.6
+Pillow>=10.0
+requests>=2.31
