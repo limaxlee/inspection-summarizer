@@ -108,3 +108,13 @@ inspection_summarizer/
 `summarizer.py` is a verbatim port of the reference implementation. Its behaviour is
 a contract with anything else reading the summary collection — changing it means
 regenerating the affected summaries.
+
+## Other tools in this repository
+
+Each package is self-contained and only shares the source `inspections` collection.
+
+| Package | Entry point | Output |
+|---|---|---|
+| `inspection_summarizer/` | `python main.py` | per-day summary documents with samples (this README) |
+| `feature_extractor/` | `python extract.py` | feature vectors in Milvus, see [feature_extractor/README.md](feature_extractor/README.md) |
+| `inspection_statistics/` | `python stats.py` | per-period `inspectionStatistics` documents (histograms, quantiles, class counts), see [inspection_statistics/README.md](inspection_statistics/README.md) |
